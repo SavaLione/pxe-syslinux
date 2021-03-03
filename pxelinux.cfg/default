@@ -1,0 +1,14 @@
+UI menu.c32
+
+MENU TITLE Syslinux (PXELINUX) - http://www.BootDev.ru
+
+LABEL reboot
+    MENU LABEL Reboot
+    COM32 reboot.c32
+
+LABEL Debian
+kernel memdisk
+append iso initrd=/debian.iso
+text help
+Test HDD
+endtext
