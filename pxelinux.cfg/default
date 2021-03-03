@@ -7,15 +7,15 @@ LABEL reboot
     COM32 reboot.c32
 
 LABEL Debian
-kernel memdisk
-append iso initrd=/debian.iso
-text help
-Test HDD
-endtext
+	kernel memdisk
+	append iso initrd=/debian.iso
+	text help
+	Debian
+	endtext
 
 LABEL Memtest86+
-kernel memdisk
-append iso initrd=/iso/memtest.iso
-text Memtest86+ V5.31b (12/04/2020)
-Test HDD
-endtext
+	kernel memdisk
+	append iso initrd=/iso/memtest.iso
+	text help
+	Memtest86+ V5.31b (12/04/2020)
+	endtext
