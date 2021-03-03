@@ -1,6 +1,6 @@
 UI menu.c32
 
-MENU TITLE Syslinux (PXELINUX) - http://www.BootDev.ru
+MENU TITLE Syslinux (PXELINUX)
 
 LABEL reboot
     MENU LABEL Reboot
@@ -10,5 +10,12 @@ LABEL Debian
 kernel memdisk
 append iso initrd=/debian.iso
 text help
+Test HDD
+endtext
+
+LABEL Memtest86+
+kernel memdisk
+append iso initrd=/iso/memtest.iso
+text Memtest86+ V5.31b (12/04/2020)
 Test HDD
 endtext
