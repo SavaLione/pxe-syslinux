@@ -4,7 +4,7 @@ MENU TITLE Syslinux (PXELINUX)
 
 LABEL Debian
 	kernel memdisk
-	append iso initrd=/debian.iso
+	append iso initrd=/iso/debian.iso
 	text help
 	Debian
 	endtext
@@ -16,14 +16,20 @@ LABEL Memtest86+
 	Memtest86+ V5.31b (12/04/2020)
 	endtext
 
-LABEL hdt
-    MENU LABEL Hardware Info
-    COM32 hdt.c32
+LABEL UbuntuServer
+        kernel memdisk
+        append iso initrd=/iso/ubuntu_server.iso
+        text help
+        Ubuntu Server 20.10 (2021-03-05)
+        endtext
 
-LABEL reboot
-    MENU LABEL Reboot
-    COM32 reboot.c32
- 
+LABEL Victoria
+        kernel memdisk
+        append iso initrd=/iso/victoria.iso
+        text help
+        Voctoria HDD 3.35
+        endtext
+
  LABEL poweroff
     MENU LABEL Power Off
     COM32 poweroff.c32
