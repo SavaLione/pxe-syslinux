@@ -16,11 +16,18 @@ LABEL Memtest86+
 	Memtest86+ V5.31b (12/04/2020)
 	endtext
 
-LABEL UbuntuServer
+LABEL Ubuntu Server 20.10
         kernel memdisk
         append iso initrd=/iso/ubuntu_server.iso
         text help
         Ubuntu Server 20.10 (2021-03-05)
+        endtext
+
+LABEL Ubuntu Server 20.04
+        kernel memdisk
+        append iso initrd=/iso/ubuntu_server20.04.iso
+        text help
+        Ubuntu Server 20.04 (2021-03-05)
         endtext
 
 LABEL Victoria
